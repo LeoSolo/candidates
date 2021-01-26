@@ -1,5 +1,5 @@
 <template>
-    <div class="page-container candidate-page" :class="{'menu-opened': $store.state.App.floatMenuOpened}">
+    <div class="page-container candidate-page" ref="candidatePage" :class="{'menu-opened': $store.state.App.floatMenuOpened}">
         <div class="pre-header"/>
         <header class="header">
             <div class="date-titles-container"
@@ -44,10 +44,10 @@
         viewMonthCount: 3,
         D: DICTIONARY,
         chosenDate: {
-          date: 1,
+          date: new Date().getDate(),
           month: DICTIONARY.MONTHS[new Date().getMonth()]
         },
-        chosenDayNumber: 1
+        chosenDayNumber: new Date().getDate()
       }
     },
     computed: {},
@@ -56,6 +56,7 @@
         this.datesCounts = [...this.datesCounts, this.getDaysCount(this.current + i)]
         this.months = [...this.months, DICTIONARY.MONTHS[this.current + i]]
       }
+      this.scrollToActiveDay();
     },
     watch: {},
     methods: {
@@ -76,6 +77,15 @@
           sum += count
         })
         return sum
+      },
+      scrollToActiveDay: function () {
+        this.$nextTick(() => {
+          this.$refs.candidatePage.scrollTo({
+            top: 0,
+            left: (new Date().getDate() - 1) * 120,
+            behavior: 'smooth'
+          })
+        })
       }
     }
   }

@@ -8,6 +8,9 @@ export default new Vuex.Store({
   state: {
     App: {
       floatMenuOpened: false
+    },
+    Candidate: {
+      subDirection: null
     }
   },
   plugins: [
@@ -19,7 +22,10 @@ export default new Vuex.Store({
   mutations: {
     setFloatMenuStatus (state, status) {
       state.App.floatMenuOpened = status
-    }
+    },
+    setSubDirection (state, subDirection) {
+      state.Candidate.subDirection = subDirection
+    },
   },
   modules: {
   }
