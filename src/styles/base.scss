@@ -1,0 +1,156 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "mBold";
+  src: url("../styles/fonts/Manrope-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "mMedium";
+  src: url("../styles/fonts/Manrope-Medium.woff") format('woff');
+}
+
+@font-face {
+  font-family: "mRegular";
+  src: url("../styles/fonts/Manrope-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "mSemiBold";
+  src: url("../styles/fonts/Manrope-SemiBold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "mLight";
+  src: url("../styles/fonts/Manrope-Light.woff") format('woff');
+}
+
+body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  font-family: mMedium;
+  overflow: hidden;
+  font-size: $fontSize;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $white;
+  border: 0 none $white;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $white;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: $white;
+}
+
+::-webkit-scrollbar-track {
+  background: $darkerBlue;
+  border: 0 none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: $darkerBlue;
+}
+
+::-webkit-scrollbar-track:active {
+  background: $darkerBlue;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.logo-icon {
+  background: url("../assets/icons/logo.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.icon-left-arrow {
+  background: url("../assets/icons/arrow-left.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.icon-menu {
+  background: url("../assets/icons/menu.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.doc-icon {
+  background: url("../assets/icons/doc-icon.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.hard-icon {
+  background: url("../assets/icons/hard.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.voice-icon {
+  background: url("../assets/icons/voice.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.media-icon {
+  background: url("../assets/icons/media.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.people-icon {
+  background: url("../assets/icons/people.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.question-icon {
+  background: url("../assets/icons/question.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.vote-icon {
+  background: url("../assets/icons/vote.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.finance-icon {
+  background: url("../assets/icons/finance.svg") center center no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,36 @@
+@import "../../../../styles/variables";
+
+.table-container {
+  position: relative;
+  padding-left: 60px;
+  transition: 250ms linear;
+
+  .str {
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+    .light-shadow {
+      position: fixed;
+      margin-top: 10px;
+      width: 100%;
+      height: 50px;
+      background: $white;
+      opacity: .3;
+    }
+
+    .cell {
+      position: relative;
+      min-width: 120px;
+      height: 60px;
+      flex: 1;
+      border-right: 1px dashed $mainBlue;
+      transition: 80ms linear;
+
+      &.active {
+        border-right: 2px solid $mainBlue;
+      }
+    }
+  }
+}
