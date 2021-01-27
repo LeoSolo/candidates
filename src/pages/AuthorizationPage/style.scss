@@ -1,0 +1,123 @@
+@import "../../styles/variables";
+
+.auth-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: space-around;
+
+    .logo {
+      position: relative;
+      margin: 0 auto;
+      height: 32px;
+      width: 164px;
+      color: $white;
+      display: flex;
+      font-size: 1.25em;
+      font-weight: 800;
+      line-height: 32px;
+    }
+
+    .inputs-container {
+      position: relative;
+      width: 480px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+
+      .input {
+        color: $white;
+        padding: 0 20px;
+        outline: none;
+        width: 480px;
+        min-height: 50px;
+        border: none;
+        caret-color: $white;
+        background: linear-gradient(270deg, #2827A8 -30.77%, #3539D5 28.34%, #3438D4 70.14%, #2529B6 126.88%);
+        box-shadow: inset 0 3px 2px #1D14A5, inset 0px -3px 2px #6369FF;
+        border-radius: 43px;
+        flex: 1;
+
+        &:first-child {
+          margin-bottom: 20px;
+        }
+
+        &::placeholder {
+          color: $greyBlue;
+          text-align: center;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px #3236D0 inset;
+          -webkit-text-fill-color: $white;
+        }
+      }
+    }
+
+    .buttons-container {
+      position: relative;
+      width: 100%;
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .btn {
+        position: relative;
+        width: 240px;
+        min-height: 50px;
+        border-radius: 43px;
+        border: none;
+        outline: none;
+
+        &:hover {
+          cursor: pointer;
+
+          &.new-user-btn {
+            background: rgba(255, 255, 255, 0.2)
+          }
+
+          &.auth-btn {
+            box-shadow: 6px 6px 20px #140AA0, -3px -2px 20px #6186FF;
+          }
+        }
+
+        &:first-child {
+          margin-bottom: 30px;
+        }
+
+        &.auth-btn {
+          color: $blue;
+          background: radial-gradient(441.4% 68.33% at 50% 31.67%, #FFFFFF 0%, #FFFFFF 40.55%, #D6D6D6 100%);
+          box-shadow: 10px 10px 20px #140AA0, -3px -2px 20px #6186FF;
+          transition: 150ms linear;
+
+          &:active {
+            box-shadow: none;
+          }
+        }
+
+        &.new-user-btn {
+          color: $white;
+          background: rgba(255, 255, 255, 0.0757485);
+          transition: 150ms linear;
+        }
+      }
+    }
+  }
+}

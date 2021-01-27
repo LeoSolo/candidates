@@ -108,15 +108,6 @@
             />
             <div class="light-shadow"/>
         </div>
-
-<!--        <div class="str" v-for="n in 5" v-bind:key="n+'d'">-->
-<!--            <div-->
-<!--                    class="cell"-->
-<!--                    v-for="i in daysCount" v-bind:key="i"-->
-<!--                    :class="{'active': chosenDayNumber === i}"-->
-<!--            />-->
-<!--            <div class="light-shadow"/>-->
-<!--        </div>-->
     </div>
 </template>
 

@@ -40,6 +40,8 @@ body {
   font-family: mMedium;
   overflow: hidden;
   font-size: $fontSize;
+  background: url("../assets/images/preview-bg.png") center center no-repeat;
+  background-size: cover;
 }
 
 ul {

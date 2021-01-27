@@ -14,12 +14,32 @@
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Организоваться
+                    Сбор документов
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Мероприять
+                    Сбор подписей
+                    <i class="icon show-icon-grey"/>
+                </div>
+                <div class="sub-direction">
+                    <div class="status await"/>
+                    Подача документ на регистрацию
+                    <i class="icon show-icon-grey"/>
+                </div>
+                <div class="sub-direction">
+                    <div class="status await"/>
+                    Формирование структуры управления кампанией
+                    <i class="icon show-icon-grey"/>
+                </div>
+                <div class="sub-direction">
+                    <div class="status await"/>
+                    Проведение паспортизации округа
+                    <i class="icon show-icon-grey"/>
+                </div>
+                <div class="sub-direction">
+                    <div class="status await"/>
+                    Определение бюджета кампании
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>
@@ -29,23 +49,23 @@
                 @click="setOpenedLi(2)"
             >
                 <i class="icon people-icon"/>
-                <span class="desc">Встречи</span>
+                <span class="desc">Социология</span>
                 <i class="icon icon-left-arrow"/>
             </li>
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Владимир Путин
+                    Проведение стартового социологического исследования
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Дмитрий Плахов
+                    Проведение контрольных социологических исследований
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Оленька
+                    Проведение опроса в день голосования
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>
@@ -55,18 +75,23 @@
                 @click="setOpenedLi(3)"
             >
                 <i class="icon voice-icon"/>
-                <span class="desc">Агитация</span>
+                <span class="desc">Мобилизация</span>
                 <i class="icon icon-left-arrow"/>
             </li>
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Агитировать
+                    Мобилизационный план
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Повторить
+                    Контроль выполнения плана
+                    <i class="icon show-icon-grey"/>
+                </div>
+                <div class="sub-direction">
+                    <div class="status await"/>
+                    Мобилизация в ЕДГ
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>
@@ -76,23 +101,23 @@
                 @click="setOpenedLi(4)"
             >
                 <i class="icon media-icon"/>
-                <span class="desc">Сми и социальные сети</span>
+                <span class="desc">Агитация</span>
                 <i class="icon icon-left-arrow"/>
             </li>
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Спам
+                    Подготовка
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Телевизор
+                    Запуск
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Твиты
+                    Контроль
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>
@@ -102,23 +127,23 @@
                 @click="setOpenedLi(5)"
             >
                 <i class="icon question-icon"/>
-                <span class="desc">Социология</span>
+                <span class="desc">Встречи</span>
                 <i class="icon icon-left-arrow"/>
             </li>
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Опрос
+                    Анализ, планирование, рекрутинг
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Лекция
+                    Встреча
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Звонки
+                    Отработка контактов
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>
@@ -134,17 +159,22 @@
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Я не знаю
+                    Подготовка макета АПМ для печати
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Что это такое
+                    Уведомление АПМ
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    И не буду гуглить
+                    Запуск
+                    <i class="icon show-icon-grey"/>
+                </div>
+                <div class="sub-direction">
+                    <div class="status await"/>
+                    Контроль
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>
@@ -154,18 +184,23 @@
                 @click="setOpenedLi(7)"
             >
                 <i class="icon vote-icon"/>
-                <span class="desc">Дни голосования</span>
+                <span class="desc">СМИ и Социальные сети</span>
                 <i class="icon icon-left-arrow"/>
             </li>
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Нервничать
+                    Составление медиа-карты округа
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Держать пальцы крестиком
+                    Достижение договоренностей с пабликами и СМИ
+                    <i class="icon show-icon-grey"/>
+                </div>
+                <div class="sub-direction">
+                    <div class="status await"/>
+                    Размещение согласно медиа-плану
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>
@@ -175,18 +210,18 @@
                 @click="setOpenedLi(8)"
             >
                 <i class="icon finance-icon"/>
-                <span class="desc">Финансы</span>
+                <span class="desc">Оппоненты</span>
                 <i class="icon icon-left-arrow"/>
             </li>
             <li class="sub-directions">
                 <div class="sub-direction">
                     <div class="status done"/>
-                    Следить
+                    Мониторинг оппонентов
                     <i class="icon show-icon-grey"/>
                 </div>
                 <div class="sub-direction">
                     <div class="status await"/>
-                    Считать
+                    Интернет-мониторинг
                     <i class="icon show-icon-grey"/>
                 </div>
             </li>

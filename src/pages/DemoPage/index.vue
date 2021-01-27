@@ -1,9 +1,6 @@
 <template>
     <div class="page-container preview-page">
-        <div class="logo">
-            <i class="icon logo-icon"/>
-            МОИ ВЫБОРЫ
-        </div>
+        <div class="logo"/>
 
         <h2 class="subtitle">ДО ЗАПУСКА ПРОЕКТА ОСТАЛОСЬ</h2>
 
@@ -55,7 +52,7 @@
   import { ROUTES } from '../../constants/routes'
 
   export default {
-    name: 'PreviewPage',
+    name: 'DemoPage',
     data() {
       return {
         msLeft: 7641000000,
@@ -69,7 +66,7 @@
         getCTime: getConvertedTime,
         timerInterval: null,
         error: false,
-        email: ''
+        email: 'admin@mail.ru'
       }
     },
     mounted() {
@@ -90,9 +87,9 @@
         }, 1000)
       },
       routeToCandidate: function () {
-        if (this.email === 'leo.solo@mail.ru') {
+        if (this.email === 'admin@mail.ru') {
           this.error = false
-          this.$router.push(ROUTES.CANDIDATE_PAGE)
+          this.$router.push(ROUTES.AUTH_PAGE)
         } else {
           this.error = true
         }
