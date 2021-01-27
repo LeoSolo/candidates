@@ -87,8 +87,7 @@
             <button
                     type="button"
                     class="btn back-btn"
-                    v-show="step === 2"
-                    @click="goPreviousStep"
+                    @click="goPrevious"
             >
                 Назад
             </button>
@@ -131,8 +130,15 @@
             break
         }
       },
-      goPreviousStep: function () {
-        this.step = 1
+      goPrevious: function () {
+        switch (this.step) {
+          case 1:
+            this.$router.push(ROUTES.AUTH_PAGE)
+            break
+          case 2:
+            this.step = 1
+            break
+        }
       }
     }
   }
