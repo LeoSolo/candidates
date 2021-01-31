@@ -1,8 +1,8 @@
 export const tasks = [
   {
     name: 'Выдвижение и регистрация',
-    start: 1611619200000,
-    end: 1611964800000,
+    start: new Date().getTime(),
+    end: new Date().getTime() + (86400000 * 3),
     type: 'ORG',
     subTasks: [
       {
@@ -24,14 +24,31 @@ export const tasks = [
     ]
   },
   {
-    name: 'Организационные процедуры'
+    name: 'Организационные процедуры',
+    start: new Date().getTime() + (86400000 * 4),
+    end: new Date().getTime() + (86400000 * 7),
+    type: 'ORG',
+    subTasks: [
+      {
+        name: 'Танцы',
+        done: true
+      },
+      {
+        name: 'Танцы',
+        done: true
+      }
+    ]
   },
   {
     name: 'Рекрутинг агитаторов',
-    start: 1611619200000,
-    end: 1611964800000,
-    type: 'AGC',
+    start: new Date().getTime() + (86400000 * 4),
+    end: new Date().getTime() + (86400000 * 7),
+    type: 'MOB',
     subTasks: [
+      {
+        name: 'Танцы',
+        done: true
+      },
       {
         name: 'Танцы',
         done: true
@@ -47,13 +64,34 @@ export const tasks = [
     ]
   },
   {
-    name: 'Пикеты'
+    name: 'Пикеты',
+    start: new Date().getTime() + 86400000,
+    end: new Date().getTime() + (86400000 * 2),
+    type: 'SOC',
+    subTasks: [
+      {
+        name: 'Танцы',
+        done: true
+      },
+      {
+        name: 'Танцы',
+        done: true
+      },
+      {
+        name: 'Танцы',
+        done: true
+      },
+      {
+        name: 'Танцы',
+        done: false
+      }
+    ]
   },
   {
     name: 'Идет голосование',
-    start: 1611619200000,
-    end: 1611964800000,
-    type: 'DVT',
+    start: new Date().getTime(),
+    end: new Date().getTime() + (86400000 * 3),
+    type: 'SOC',
     subTasks: [
       {
         name: 'Танцы',
@@ -61,27 +99,16 @@ export const tasks = [
       },
       {
         name: 'Танцы',
-        done: false
+        done: true
+      },
+      {
+        name: 'Танцы',
+        done: true
       },
       {
         name: 'Танцы',
         done: false
       }
     ]
-  },
-  {
-    name: 'Финансовый контроль'
-  },
-  {
-    name: 'Подготовка к работе со сми и социальными сетями'
-  },
-  {
-    name: 'Мобилизация сторонников'
-  },
-  {
-    name: 'Подготовка и выпуск АПМ'
-  },
-  {
-    name: 'Социологические исследования'
   }
 ]

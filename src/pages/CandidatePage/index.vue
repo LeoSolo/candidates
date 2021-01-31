@@ -1,12 +1,13 @@
 <template>
-    <div class="page-container candidate-page" ref="candidatePage" :class="{'menu-opened': $store.state.App.floatMenuOpened}">
+    <div class="page-container candidate-page" ref="candidatePage"
+         :class="{'menu-opened': $store.state.App.floatMenuOpened}">
         <div class="pre-header"/>
         <header class="header">
             <div class="date-titles-container"
-                 v-bind:key="index"
+                 v-bind:key="index + 'cont'"
                  v-for="(count, index) in datesCounts"
             >
-                <div v-bind:key="i"
+                <div v-bind:key="i + 'date'"
                      class="date"
                      v-for="(day, i) in Number(count)"
                      :class="{'active': chosenDate.date === day && chosenDate.month === months[index]}"
@@ -22,16 +23,17 @@
 
         <CTable
                 :daysCount="getAllDays()"
-                :directionsCount="8"
+                :directions="directions"
                 :chosenDayNumber="chosenDayNumber"
         />
     </div>
 </template>
 
 <script>
-  import FloatMenu from "./components/FloatMenu"
+  import FloatMenu from './components/FloatMenu'
   import { DICTIONARY } from '../../constants/dictionary'
-  import CTable from "./components/CTable/index"
+  import { DIRECTIONS } from '../../constants/directions'
+  import CTable from './components/CTable/index'
 
   export default {
     name: 'CandidatePage',
@@ -47,7 +49,8 @@
           date: new Date().getDate(),
           month: DICTIONARY.MONTHS[new Date().getMonth()]
         },
-        chosenDayNumber: new Date().getDate()
+        chosenDayNumber: new Date().getDate(),
+        directions: DIRECTIONS
       }
     },
     computed: {},
