@@ -10,8 +10,8 @@
             <div class="task" v-for="task in tasksList.filter(item => item.type === dir.abbr)"
                  :key="task.name"
                  :style="{
-                    width: 120 * Math.trunc((task.end - task.start) / 86400000) - 10 + 'px',
-                    left: 120 * Math.trunc( (task.start - firstDay) / 86400000) + 120 + 'px'
+                    width: getTaskWidth(task) + 'px',
+                    left: getTaskPosLeft(task) + 'px'
             }">
                 <span class="task-name">{{ task.name }}</span>
                 <div class="subTasks-statuses-container">
@@ -20,12 +20,7 @@
                 </div>
                 <i class="icon icon-info"/>
 
-                <div class="subTasks-table-container">
-                    <div class="str" v-for="(subTask, i) in task.subTasks"
-                         :key="subTask.name + '-' + i">
-                        <div class="subTask">{{ subTask.name }}</div>
-                    </div>
-                </div>
+                <CSubTable :task="task" :tasksList="tasksList.filter(item => item.type === dir.abbr)"/>
             </div>
 
             <div
@@ -56,9 +51,11 @@
 
 <script>
   import { tasks } from '../../../../mocks/tasks'
+  import CSubTable from './CSubTable/index'
 
   export default {
     name: 'CTable',
+    components: {CSubTable},
     props: {
       daysCount: Number,
       directions: Array,
@@ -91,6 +88,12 @@
         }
 
         return count
+      },
+      getTaskPosLeft: function (task) {
+        return 120 * Math.trunc((task.start - this.firstDay) / 86400000) + 120
+      },
+      getTaskWidth: function (task) {
+        return 120 * Math.trunc((task.end - task.start) / 86400000) - 10
       }
     }
   }

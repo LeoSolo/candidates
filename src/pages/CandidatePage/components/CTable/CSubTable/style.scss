@@ -1,0 +1,70 @@
+@import "../../../../../styles/variables";
+
+.subTasks-table-container {
+  position: absolute;
+  animation: fadeOut 250ms linear;
+  top: 115px;
+
+  .str {
+    position: relative;
+    margin-top: 10px;
+
+    .subTask {
+      position: relative;
+      height: 50px;
+      background: $mainBlue;
+      box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.279666),
+      0 3px 3px rgba(0, 0, 0, 0.110304);
+      border-radius: 10px;
+      color: $white;
+      font-family: mMedium;
+      padding: 15px 5px;
+      text-align: center;
+      line-height: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      display: block;
+      bottom: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $awaitColor;
+      border-radius: 1.5px;
+      width: 18px;
+      height: 3px;
+
+      &.done {
+        background: $doneColor;
+      }
+    }
+
+    .light-shadow {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: $white;
+      opacity: .3;
+      border-radius: 10px;
+    }
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0
+  }
+  50% {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}

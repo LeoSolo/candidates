@@ -7,19 +7,21 @@ export const tasks = [
     subTasks: [
       {
         name: 'Танцы',
-        done: true
+        done: true,
+        start: new Date().getTime(),
+        end: new Date().getTime() + 86400000
       },
       {
-        name: 'Танцы',
-        done: true
+        name: 'Песни',
+        done: true,
+        start: new Date().getTime() + 86400000,
+        end: new Date().getTime() + (86400000 * 2)
       },
       {
-        name: 'Танцы',
-        done: true
-      },
-      {
-        name: 'Танцы',
-        done: false
+        name: 'Драки',
+        done: false,
+        start: new Date().getTime() + (86400000 * 2),
+        end: new Date().getTime() + (86400000 * 3)
       }
     ]
   },
@@ -31,11 +33,15 @@ export const tasks = [
     subTasks: [
       {
         name: 'Танцы',
-        done: true
+        done: true,
+        start: new Date().getTime() + (86400000 * 4),
+        end: new Date().getTime() + (86400000 * 5)
       },
       {
-        name: 'Танцы',
-        done: true
+        name: 'Песни',
+        done: true,
+        start: new Date().getTime() + (86400000 * 5),
+        end: new Date().getTime() + (86400000 * 7)
       }
     ]
   },
@@ -47,43 +53,21 @@ export const tasks = [
     subTasks: [
       {
         name: 'Танцы',
-        done: true
+        done: true,
+        start: new Date().getTime() + (86400000 * 4),
+        end: new Date().getTime() + (86400000 * 5)
       },
       {
         name: 'Танцы',
-        done: true
+        done: true,
+        start: new Date().getTime() + (86400000 * 5),
+        end: new Date().getTime() + (86400000 * 6)
       },
       {
         name: 'Танцы',
-        done: true
-      },
-      {
-        name: 'Танцы',
-        done: false
-      }
-    ]
-  },
-  {
-    name: 'Пикеты',
-    start: new Date().getTime() + 86400000,
-    end: new Date().getTime() + (86400000 * 2),
-    type: 'SOC',
-    subTasks: [
-      {
-        name: 'Танцы',
-        done: true
-      },
-      {
-        name: 'Танцы',
-        done: true
-      },
-      {
-        name: 'Танцы',
-        done: true
-      },
-      {
-        name: 'Танцы',
-        done: false
+        done: false,
+        start: new Date().getTime() + (86400000 * 6),
+        end: new Date().getTime() + (86400000 * 7)
       }
     ]
   },
@@ -95,19 +79,41 @@ export const tasks = [
     subTasks: [
       {
         name: 'Танцы',
-        done: true
+        done: true,
+        start: new Date().getTime(),
+        end: new Date().getTime() + (86400000 * 2)
       },
       {
         name: 'Танцы',
-        done: true
+        done: false,
+        start: new Date().getTime() + (86400000 * 2),
+        end: new Date().getTime() + (86400000 * 3)
       },
       {
         name: 'Танцы',
-        done: true
+        done: false,
+        start: new Date().getTime() + (86400000 * 2),
+        end: new Date().getTime() + (86400000 * 3)
+      }
+    ]
+  },
+  {
+    name: 'Пикеты',
+    start: new Date().getTime() + (86400000 * 8),
+    end: new Date().getTime() + (86400000 * 12),
+    type: 'SOC',
+    subTasks: [
+      {
+        name: 'Танцы',
+        done: true,
+        start: new Date().getTime() + (86400000 * 8),
+        end: new Date().getTime() + (86400000 * 9)
       },
       {
         name: 'Танцы',
-        done: false
+        done: true,
+        start: new Date().getTime() + (86400000 * 9),
+        end: new Date().getTime() + (86400000 * 11)
       }
     ]
   }

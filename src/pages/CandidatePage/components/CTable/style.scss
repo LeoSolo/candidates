@@ -53,7 +53,7 @@
 
       .task-name {
         position: absolute;
-        top: 46%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         white-space: nowrap;
@@ -77,6 +77,7 @@
           height: 3px;
           margin: 0 2px;
           background: $awaitColor;
+          border-radius: 1.5px;
 
           &.done {
             background: $doneColor;
@@ -96,7 +97,6 @@
       .subTasks-table-container {
         position: relative;
         display: none;
-        top: 50px;
         width: 100%;
       }
     }
