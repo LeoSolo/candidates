@@ -7,7 +7,7 @@
               width: getSubTaskWidth(subTask) + 'px',
               left: getSubTaskPosLeft(subTask) + 'px'
             }">
-                {{ subTask.name }}
+                <span>{{ subTask.name }}</span>
 
                 <i class="icon" :class="{'done': subTask.done}"/>
             </div>

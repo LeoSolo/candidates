@@ -22,6 +22,13 @@
       text-align: center;
       line-height: 20px;
 
+      span {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
       &:hover {
         cursor: pointer;
       }

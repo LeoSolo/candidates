@@ -6,19 +6,19 @@ export const tasks = [
     type: 'ORG',
     subTasks: [
       {
-        name: 'Танцы',
+        name: 'Сбор документов',
         done: true,
         start: new Date().getTime(),
         end: new Date().getTime() + 86400000
       },
       {
-        name: 'Песни',
+        name: 'Сбор подписей',
         done: true,
         start: new Date().getTime() + 86400000,
         end: new Date().getTime() + (86400000 * 2)
       },
       {
-        name: 'Драки',
+        name: 'Подача документ на регистрацию',
         done: false,
         start: new Date().getTime() + (86400000 * 2),
         end: new Date().getTime() + (86400000 * 3)
@@ -32,13 +32,13 @@ export const tasks = [
     type: 'ORG',
     subTasks: [
       {
-        name: 'Танцы',
+        name: 'Проведение паспортизации округа',
         done: true,
         start: new Date().getTime() + (86400000 * 4),
         end: new Date().getTime() + (86400000 * 5)
       },
       {
-        name: 'Песни',
+        name: 'Определение бюджета кампании',
         done: true,
         start: new Date().getTime() + (86400000 * 5),
         end: new Date().getTime() + (86400000 * 7)
@@ -52,19 +52,19 @@ export const tasks = [
     type: 'MOB',
     subTasks: [
       {
-        name: 'Танцы',
+        name: 'Подготовка',
         done: true,
         start: new Date().getTime() + (86400000 * 4),
         end: new Date().getTime() + (86400000 * 5)
       },
       {
-        name: 'Танцы',
+        name: 'Запуск',
         done: true,
         start: new Date().getTime() + (86400000 * 5),
         end: new Date().getTime() + (86400000 * 6)
       },
       {
-        name: 'Танцы',
+        name: 'Контроль',
         done: false,
         start: new Date().getTime() + (86400000 * 6),
         end: new Date().getTime() + (86400000 * 7)
@@ -72,25 +72,25 @@ export const tasks = [
     ]
   },
   {
-    name: 'Идет голосование',
+    name: 'Проведение опроса в день голосования',
     start: new Date().getTime(),
     end: new Date().getTime() + (86400000 * 3),
     type: 'SOC',
     subTasks: [
       {
-        name: 'Танцы',
+        name: 'Подготовка',
         done: true,
         start: new Date().getTime(),
         end: new Date().getTime() + (86400000 * 2)
       },
       {
-        name: 'Танцы',
+        name: 'Старт',
         done: false,
         start: new Date().getTime() + (86400000 * 2),
         end: new Date().getTime() + (86400000 * 3)
       },
       {
-        name: 'Танцы',
+        name: 'Контроль',
         done: false,
         start: new Date().getTime() + (86400000 * 2),
         end: new Date().getTime() + (86400000 * 3)
