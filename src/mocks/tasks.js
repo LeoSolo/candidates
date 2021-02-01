@@ -84,7 +84,7 @@ export const tasks = [
         end: new Date().getTime() + (86400000 * 2)
       },
       {
-        name: 'Старт',
+        name: 'Запуск',
         done: false,
         start: new Date().getTime() + (86400000 * 2),
         end: new Date().getTime() + (86400000 * 3)
@@ -104,13 +104,13 @@ export const tasks = [
     type: 'SOC',
     subTasks: [
       {
-        name: 'Танцы',
+        name: 'Подготовка',
         done: true,
         start: new Date().getTime() + (86400000 * 8),
         end: new Date().getTime() + (86400000 * 9)
       },
       {
-        name: 'Танцы',
+        name: 'Запуск',
         done: true,
         start: new Date().getTime() + (86400000 * 9),
         end: new Date().getTime() + (86400000 * 11)
