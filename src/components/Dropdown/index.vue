@@ -24,7 +24,7 @@
     >
       <li
         class="value"
-        :class="{ 'chosenValue': !multiselect ? value === item : selected.includes(item)}"
+        :class="{'chosenValue': !multiselect ? value === item : selected.includes(item)}"
         @click.prevent="chooseValue(item)"
         v-for="(item, index) in list"
         :key="index"
